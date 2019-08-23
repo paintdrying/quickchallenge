@@ -1,0 +1,38 @@
+# Clinton Electronics Coding Challenge
+Hello John, congrats on making it to the next step: the Coding Challenge! This challenge consists of a real-world mini project which will give us a chance to evaluate your coding abilities. We anticipate this challenge will take 6-8 hours to complete and is due by 5pm on Wednesday 8/28. When you are finished, please commit your code to a GitHub repository and email us the link.
+
+Good Luck!
+
+# Front End Coding Test
+
+This challenge features a common piece of any web application - the User Account management form. We're looking for a web page which allows a user to edit and update their user account information. Our application is written in React, but you may complete this challenge using pure HTML, CSS, and Javascript.
+Here are the requirements:
+
+- Provide a UI epresenting a "User Account" page.
+- Display the user's properties on the page.
+- Provide a form to allow the user to edit their properties.
+	- Users should not be able to edit their id.
+- Include some validation on the form, which must validate before they are allowed to save their changes.
+	- All fields are required.
+	- Email must be in a valid format.
+	- Users must be at least 18 years old.
+	
+- Provide a "Save Changes" button which calls a fake API endpoint.
+	- Make an HTTP 'PUT' request to a fake API endpoint with PostBin, Hookbin, or something similar.
+	- The Content-Type of this request should be 'application/json'.
+	- The body of the request should be the updated user object.
+	- Make the request using the fetch api and async/await keywords.
+- You may use any other libraries/modules you wish.
+- While these are the only 'Requirements', we will be looking at overall front-end skills, so feel free to show us what you've got.
+
+User Object
+```
+User {
+	id: string;
+	email: string;
+	firstName: string;
+	lastName: string;
+	jobTitle: string;
+	birthday: string;
+}
+```
